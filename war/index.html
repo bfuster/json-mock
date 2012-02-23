@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+	body {
+		font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+		margin: 40px 40px;
+		width: 660px;
+		margin: 0px auto;
+	}
+	a, a:visited {
+		font-size: 18px; 
+		color: blue;
+		text-decoration: none;
+	}
+	ul {
+		margin: 0px 0px;
+		padding: 0px 0px;
+	}
+	li {
+		list-style: none;
+		width: 250px;
+	}
+	span {
+		margin-left: 10px;
+		color: gray;
+		float: right;
+	}
+	
+</style>
+
+</head>
+<body>
+
+	<h1>Add JSON</h1>
+	<form action="/add" method="post">
+		<textarea rows="20" cols="100" name="mock.json"></textarea>
+		<input type="submit" value="Save"/>
+	</form>
+
+</body>
+</html>
