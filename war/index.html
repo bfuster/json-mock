@@ -1,42 +1,183 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-
-	body {
-		font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
-		margin: 40px 40px;
-		width: 660px;
-		margin: 0px auto;
-	}
-	a, a:visited {
-		font-size: 18px; 
-		color: blue;
-		text-decoration: none;
-	}
-	ul {
-		margin: 0px 0px;
-		padding: 0px 0px;
-	}
-	li {
-		list-style: none;
-		width: 250px;
-	}
-	span {
-		margin-left: 10px;
-		color: gray;
-		float: right;
-	}
-	
-</style>
-
+<style>
+    
+    	body {
+    		font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+    		width: 960px;
+    		margin: 0px auto;
+    		text-align: center;
+/*     		margin-top: 20px; */
+    	}
+    	h1, h2 {
+    		margin: 0px 0px;
+    	}
+    	ul, li {
+	    	padding: 0px 0px;
+    		margin: 0px 0px;
+    	}
+    	li {
+    		list-style-type: none;
+    		font-size: 15px;
+    	}
+    	h4 {
+    		margin-bottom: 10px;
+    	}
+    	.bla {
+    		width: 80px;
+    		height: 120px;
+    	}
+    	em {
+    		color: blue;
+    		font-style: normal;
+    	}
+    	h3 {
+    		color: gray;
+    		border-bottom: 1px solid #eee9e9;
+    		margin: 4px 4px;
+    		padding-bottom: 
+    	}
+    	h1 span, h2 span {
+    		font-size: 14px;
+    		color: gray;
+    		font-weight: normal;
+    	}
+    	li span {
+    		color: blue;
+    	}
+    	p span {
+    		color: gray;
+    	}
+    	
+    	#docs {
+    		text-align: left;
+    		float: left;
+    		width: 550px;
+    	}
+    	
+    	#rightbar {
+    		float:right;
+    		width: 300px;
+    		height: 500px;
+    		margin-top: 25px;
+    	}
+    	#login {
+    		border: 1px solid #eee9e9;
+/*     		height: 280px; */
+			padding-bottom: 20px;
+    	}
+    	
+    	ul#why li {
+    		list-style-type: none;
+    		margin-left: 20px;
+    		font-size: 18px;
+    		margin: 5px 5px;
+    		
+    	}
+    	
+    	.einfo {
+    		font-size: 15px;
+    		font-weight: normal;
+    	}
+    	
+    	#contact {
+    		width: 300px;
+    		height: 200px;
+    		position: relative;
+    		text-align: right;
+    	}
+    	
+    	#google_connect {
+    		margin-top: 40px;
+    	}
+    	
+    	#login ul, #login h4 {
+    		text-align: left;
+    		margin-left: 20px;
+    	}
+    	
+    	#login h5 {
+    		margin-bottom: 5px;
+    		margin-top: 70px;
+    	}
+    	
+    	h4 {
+    		font-size: 28px;
+    	}
+    	
+    	#menu {
+    		width: 960px;
+    		height: 40px;
+    	}
+    	#menu {
+    		border-bottom: 1px solid #eee9e9;
+    	}
+    	#menu ul, menu {
+    		padding: 0px 0px;
+    		margin: 0px px;
+    	}
+    	#menu ul {
+    		float: right;
+    		height: 30px;
+    		margin-top: 10px;
+    	}
+    	#menu li {
+    		height: 30px;
+    		display: inline;
+    		margin: 20px 20px;
+    		font-size: 18px;
+    	}
+    	
+    	#logo {
+    		float: left;
+    	}
+    	
+    	#head p a {
+    		color: black;
+    	}
+    	#head {
+    		margin-top: 30px;
+    		position: relative;
+    	}
+    	.info {
+    		border: 1px solid black;
+    		border-bottom: 0px;
+    		height: 5px;
+    		top: -10px;
+    	}
+    	
+    	.info p {
+    		margin-top: -20px;
+    	}
+    	
+    	#url_info {
+    		position: absolute;
+    		width: 94px;
+    		right: 265px;
+    	}
+    	#resize_info {
+    		position: absolute;
+    		width: 45px;
+    		right: 217px;
+    	}
+    	
+    	
+    </style>
 </head>
 <body>
 
-	<h1>Add JSON</h1>
+	<menu>
+		<div id="menu">
+			<div id="logo">
+				<h1>json-mock</h1>
+			</div>
+		</div>
+	</menu>
+	
 	<form action="/add" method="post">
-		<textarea rows="20" cols="100" name="mock.json"></textarea>
-		<input type="submit" value="Save"/>
+		<textarea rows="20" cols="80" name="mock.json" id="textarea"></textarea></br>
+		<input type="submit" value="Save" style="font-size: 30px;"/>
 	</form>
 
 </body>
